@@ -11,6 +11,6 @@ RUN dnf install -y epel-release \
     && dnf install -y octave \
     && dnf clean all \
     && rm -rf /var/cache/yum 
-
+RUN echo "octaveroot" | passwd --stdin root
 RUN useradd octaveuser
 ENTRYPOINT su - octaveuser
