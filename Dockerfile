@@ -1,5 +1,5 @@
 FROM centos:8 
-LABEL maintainer Phil Moses <philmoses@gmail.com>
+
 
 RUN yum update -y 
 
